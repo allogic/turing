@@ -68,7 +68,7 @@ namespace Turing {
 
   public:
     void Run(const std::vector<uint8_t> &program) {
-      ASSERT(0x10 > program.size(), "Program max size 0x10")
+      ASSERT(0x10 >= program.size(), "Program max size 0x10")
 
       auto size = static_cast<uint8_t>(program.size());
 
